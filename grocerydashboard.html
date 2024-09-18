@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Dashboard</title>
+    <link rel="stylesheet" href="groceryList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-list"></i> GROCERY LIST APP</h1>
+            <nav class="menu">
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="additems.html" id="back-btn">Add Items</a>
+                        <a href="list.html" id="my-list-btn">My List</a> <!-- My List menu item -->
+                        <a href="index.html" id="logout-btn">Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="list-container">
+            <select id="category-filter">
+                <option value="">All</option>
+                <option value="meat">Meat</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+            </select>
+            <input type="text" id="search" placeholder="Search items">
+            <ul id="item-list"></ul>
+        </div>
+
+        <!-- Add to List Button -->
+        
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

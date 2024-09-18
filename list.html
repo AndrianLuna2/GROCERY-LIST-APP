@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery List</title>
+    <link rel="stylesheet" href="groceryList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-list"></i> My Grocery List</h1>
+            <nav class="menu">
+                <div class="dropdown">
+                    <button class="dropdown-toggle">Menu</button>
+                    <div class="dropdown-content">
+                        <a href="grocerydashboard.html" id="dashboard-btn">Dashboard</a>
+                        <a href="index.html" id="logout-btn">Logout</a> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+        <div>
+            <input type="checkbox" id="hide-checked-items"> Hide Checked Items
+        </div>
+
+        <div class="list-container">
+            <ul id="list-items"></ul>
+        </div>
+
+        <p id="empty-list-message">Your list is empty.</p>
+        <button id="add-list-btn">Add More Items</button>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>
